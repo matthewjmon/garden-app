@@ -1,4 +1,10 @@
-// Object to hold advice rules
+// Prompt the user to enter the current season
+let season = prompt("Enter the current season (e.g., summer, winter):");
+
+// Prompt the user to enter the type of plant
+let plantType = prompt("Enter the plant type (e.g., flower, vegetable):");
+
+// Object storing advice messages for different seasons and plant types
 const adviceRules = {
     summer: {
         flower: "Water your plants regularly and provide some shade.\nUse fertiliser to encourage blooms.",
@@ -10,17 +16,14 @@ const adviceRules = {
     }
 };
 
-// Function to get advice based on season and plant type
+// Function to get gardening advice based on season and plant type
 function getAdvice(season, plantType) {
     if (adviceRules[season] && adviceRules[season][plantType]) {
         return adviceRules[season][plantType];
     } else {
-        return "No advice for this season or plant type.";
+        return "No advice available for this season or plant type.";
     }
 }
 
-// Hardcoded values (to be replaced in next issue)
-let season = "summer";
-let plantType = "flower";
-
+// Generate and display the gardening advice in the console
 console.log(getAdvice(season, plantType));
