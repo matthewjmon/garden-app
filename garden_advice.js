@@ -27,3 +27,7 @@ function getAdvice(season, plantType) {
 
 // Generate and display the gardening advice in the console
 console.log(getAdvice(season, plantType));
+
+
+
+
