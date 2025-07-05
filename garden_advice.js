@@ -1,3 +1,7 @@
+// Hardcoded values for the season and plant type
+let season = "summer"; // TODO: Replace with prompt() to allow user interaction.
+let plantType = "flower"; // TODO: Replace with prompt() to allow user interaction.
+
 // Object to hold advice rules
 const adviceRules = {
     summer: {
@@ -19,8 +23,8 @@ function getAdvice(season, plantType) {
     }
 }
 
-// Hardcoded values (to be replaced in next issue)
-let season = "summer";
-let plantType = "flower";
-
+// Log the generated advice to the console
 console.log(getAdvice(season, plantType));
+
+
+
